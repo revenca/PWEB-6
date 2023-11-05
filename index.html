@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        {{hasil}}<br>
+        <input v-model="v1" placeholder="masukan angka">
+        <input v-model="v2" placeholder="masukan angka"><br>
+        <button v-on:click="hasil=parseFloat(v1)+parseFloat(v2)">+</button>
+        <button v-on:click="hasil=parseFloat(v1)-parseFloat(v2)">-</button>
+        <button v-on:click="hasil=parseFloat(v1)/parseFloat(v2)">/</button>
+        <button v-on:click="hasil=parseFloat(v1)*parseFloat(v2)">*</button>
+    </div>
+    <script src="java.js"></script>
+</body>
